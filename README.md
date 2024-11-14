@@ -50,7 +50,8 @@ Cart Page, This page is about the customer's information (Name, Surname, email, 
 ![Screenshot 2024-11-14 180127](https://github.com/user-attachments/assets/dfd45b67-cb48-4bb7-afda-6e0b96b36b89)
 
 
-Yes, this project is not perfect, but Considering that I wrote it in 10 days I think it's pretty good, I think)
+Yes, this project is not perfect, but Considering that I wrote it in 10 days I think it's pretty good, I think) And yes, it's only in the Russian language, but to understand how it works you don't need to know Russian 
+ :)
 
 
 
