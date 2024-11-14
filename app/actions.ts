@@ -2,7 +2,7 @@
 
 import { prisma } from '@/prisma/prisma-client';
 import { PayOrderTemplate } from '@/shared/components';
-import { VerificationUserTemplate } from '@/shared/components/shared/email-temapltes/verification-user';
+import { VerificationUserTemplate } from '@/shared/components/shared/email-templates/verification-user';
 import { CheckoutFormValues } from '@/shared/constants';
 import { createPayment, sendEmail } from '@/shared/lib';
 import { getUserSession } from '@/shared/lib/get-user-session';
@@ -13,7 +13,7 @@ import { cookies } from 'next/headers';
 export async function createOrder(data: CheckoutFormValues) {
   try {
     const cookieStore = cookies();
-    const cartToken = cookieStore.get('cartToken')?.value;
+    const cartToken = (await cookieStore).get('cartToken')?.value;
 
     if (!cartToken) {
       throw new Error('Cart token not found');

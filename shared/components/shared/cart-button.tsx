@@ -14,7 +14,10 @@ interface Props {
 export const CartButton: React.FC<Props> = ({ className }) => {
   const totalAmount = useCartStore((state) => state.totalAmount);
   const items = useCartStore((state) => state.items);
-  const loading = useCartStore((state) => state.loading);  
+  const loading = useCartStore((state) => state.loading);
+  
+  const itemCount = React.useMemo(() => items.length, [items]);
+  
 
   return (
     <CartDrawer>

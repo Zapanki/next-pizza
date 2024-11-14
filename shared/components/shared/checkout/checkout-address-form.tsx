@@ -3,9 +3,9 @@
 import React from 'react';
 import { WhiteBlock } from '../white-block';
 import { FormTextarea } from '../form';
-import { AdressInput } from '../address-input';
 import { Controller, useFormContext } from 'react-hook-form';
 import { ErrorText } from '../error-text';
+import { AdressInput } from '../address-input';
 
 interface Props {
   className?: string;
